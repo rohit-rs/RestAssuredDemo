@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+  <reporter-output>
+    <line>
+      <![CDATA[>>URL is set to: https://api.ratesapi.io/api/2010-01-15]]>
+    </line>
+    <line>
+      <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/2010-01-15]]>
+    </line>
+    <line>
+      <![CDATA[>>Response status code is: 200]]>
+    </line>
+    <line>
+      <![CDATA[>>Base exchange currency is: EUR]]>
+    </line>
+    <line>
+      <![CDATA[>>[Expected exchange rate date: 2010-01-15 | Actual exchange rate date: 2010-01-15]]]>
+    </line>
+    <line>
+      <![CDATA[>>URL is set to: https://api.ratesapi.io/api/2018-01-31?symbols=RON]]>
+    </line>
+    <line>
+      <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/2018-01-31?symbols=RON]]>
+    </line>
+    <line>
+      <![CDATA[>>Response status code is: 200]]>
+    </line>
+    <line>
+      <![CDATA[>>Base exchange currency is: EUR]]>
+    </line>
+    <line>
+      <![CDATA[>>[Expected exchange rate date: 2018-01-31 | Actual exchange rate date: 2018-01-31]]]>
+    </line>
+    <line>
+      <![CDATA[>>Response: {"base":"EUR","rates":{"RON":4.6545},"date":"2018-01-31"}]]>
+    </line>
+    <line>
+      <![CDATA[>>[Expected exchange currency: [RON] | Actual exchange currency: [RON]]]]>
+    </line>
+    <line>
+      <![CDATA[>>URL is set to: https://api.ratesapi.io/api/2018-01-31?symbols=USD,GBP]]>
+    </line>
+    <line>
+      <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/2018-01-31?symbols=USD,GBP]]>
+    </line>
+    <line>
+      <![CDATA[>>Response status code is: 200]]>
+    </line>
+    <line>
+      <![CDATA[>>Base exchange currency is: EUR]]>
+    </line>
+    <line>
+      <![CDATA[>>[Expected exchange rate date: 2018-01-31 | Actual exchange rate date: 2018-01-31]]]>
+    </line>
+    <line>
+      <![CDATA[>>Response: {"base":"EUR","rates":{"USD":1.2457,"GBP":0.8791},"date":"2018-01-31"}]]>
+    </line>
+    <line>
+      <![CDATA[>>[Expected exchange currency: [USD, GBP] | Actual exchange currency: [GBP, USD]]]]>
+    </line>
+    <line>
+      <![CDATA[>>URL is set to: https://api.ratesapi.io/api/2013-10-10?base=CZK]]>
+    </line>
+    <line>
+      <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/2013-10-10?base=CZK]]>
+    </line>
+    <line>
+      <![CDATA[>>Response status code is: 200]]>
+    </line>
+    <line>
+      <![CDATA[>>Base exchange currency is: CZK]]>
+    </line>
+    <line>
+      <![CDATA[>>[Expected exchange rate date: 2013-10-10 | Actual exchange rate date: 2013-10-10]]]>
+    </line>
+    <line>
+      <![CDATA[>>URL is set to: https://api.ratesapi.io/api/2019-07-15?base=PLN&symbols=GBP]]>
+    </line>
+    <line>
+      <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/2019-07-15?base=PLN&symbols=GBP]]>
+    </line>
+    <line>
+      <![CDATA[>>Response status code is: 200]]>
+    </line>
+    <line>
+      <![CDATA[>>Base exchange currency is: PLN]]>
+    </line>
+    <line>
+      <![CDATA[>>[Expected exchange rate date: 2019-07-15 | Actual exchange rate date: 2019-07-15]]]>
+    </line>
+    <line>
+      <![CDATA[>>Response: {"base":"PLN","rates":{"GBP":0.2108605884},"date":"2019-07-15"}]]>
+    </line>
+    <line>
+      <![CDATA[>>[Expected exchange currency: [GBP] | Actual exchange currency: [GBP]]]]>
+    </line>
+    <line>
+      <![CDATA[>>URL is set to: https://api.ratesapi.io/api/2020-12-25]]>
+    </line>
+    <line>
+      <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/2020-12-25]]>
+    </line>
+    <line>
+      <![CDATA[>>Response status code is: 200]]>
+    </line>
+    <line>
+      <![CDATA[>>Base exchange currency is: EUR]]>
+    </line>
+    <line>
+      <![CDATA[>>[Latest exchange rate date: 2020-12-18 | Exchange rate date for future dates: 2020-12-18]]>
+    </line>
+    <line>
+      <![CDATA[>>URL is set to: https://api.ratesapi.io/api/latest]]>
+    </line>
+    <line>
+      <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/latest]]>
+    </line>
+    <line>
+      <![CDATA[>>Response status code is: 200]]>
+    </line>
+    <line>
+      <![CDATA[>>Base exchange currency is: EUR]]>
+    </line>
+    <line>
+      <![CDATA[>>Response: {"base":"EUR","rates":{"GBP":0.90828,"HKD":9.5039,"IDR":17337.6,"ILS":3.9676,"DKK":7.4393,"INR":90.117,"CHF":1.0845,"MXN":24.328,"CZK":26.139,"SGD":1.6282,"THB":36.556,"HRK":7.5328,"MYR":4.9532,"NOK":10.5163,"CNY":8.0146,"BGN":1.9558,"PHP":58.93,"SEK":10.1333,"PLN":4.4779,"ZAR":17.8699,"CAD":1.5638,"ISK":156.4,"BRL":6.2668,"RON":4.8688,"NZD":1.7201,"TRY":9.3988,"JPY":126.69,"RUB":90.2025,"KRW":1346.95,"USD":1.2259,"HUF":357.24,"AUD":1.6107},"date":"2020-12-18"}]]>
+    </line>
+    <line>
+      <![CDATA[>>URL is set to: https://api.ratesapi.io/api/latest?symbols=JPY]]>
+    </line>
+    <line>
+      <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/latest?symbols=JPY]]>
+    </line>
+    <line>
+      <![CDATA[>>Response status code is: 200]]>
+    </line>
+    <line>
+      <![CDATA[>>Base exchange currency is: EUR]]>
+    </line>
+    <line>
+      <![CDATA[>>Response: {"base":"EUR","rates":{"JPY":126.69},"date":"2020-12-18"}]]>
+    </line>
+    <line>
+      <![CDATA[>>[Expected exchange currency: [JPY] | Actual exchange currency: [JPY]]]]>
+    </line>
+    <line>
+      <![CDATA[>>URL is set to: https://api.ratesapi.io/api/latest?symbols=INR,AUD,GBP]]>
+    </line>
+    <line>
+      <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/latest?symbols=INR,AUD,GBP]]>
+    </line>
+    <line>
+      <![CDATA[>>Response status code is: 200]]>
+    </line>
+    <line>
+      <![CDATA[>>Base exchange currency is: EUR]]>
+    </line>
+    <line>
+      <![CDATA[>>Response: {"base":"EUR","rates":{"GBP":0.90828,"INR":90.117,"AUD":1.6107},"date":"2020-12-18"}]]>
+    </line>
+    <line>
+      <![CDATA[>>[Expected exchange currency: [INR, AUD, GBP] | Actual exchange currency: [AUD, GBP, INR]]]]>
+    </line>
+    <line>
+      <![CDATA[>>URL is set to: https://api.ratesapi.io/api/latest?base=INR]]>
+    </line>
+    <line>
+      <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/latest?base=INR]]>
+    </line>
+    <line>
+      <![CDATA[>>Response status code is: 200]]>
+    </line>
+    <line>
+      <![CDATA[>>Base exchange currency is: INR]]>
+    </line>
+    <line>
+      <![CDATA[>>Response: {"base":"INR","rates":{"GBP":0.0100788974,"HKD":0.1054617886,"IDR":192.3898931389,"ILS":0.0440272091,"DKK":0.0825515718,"INR":1.0,"CHF":0.0120343553,"MXN":0.2699601629,"CZK":0.2900562602,"SGD":0.0180676232,"THB":0.4056504322,"HRK":0.0835891119,"EUR":0.0110966854,"MYR":0.0549641022,"NOK":0.1166960729,"CNY":0.088935495,"BGN":0.0217028973,"PHP":0.6539276718,"PLN":0.0496898476,"ZAR":0.1982966588,"CAD":0.0173529967,"ISK":1.7355215997,"BRL":0.0695407082,"RON":0.054027542,"NZD":0.0190874086,"TRY":0.1042955269,"JPY":1.4058390759,"RUB":1.0009487666,"KRW":14.9466804266,"USD":0.0136034267,"AUD":0.0178734312,"HUF":3.9641798995,"SEK":0.1124460424},"date":"2020-12-18"}]]>
+    </line>
+    <line>
+      <![CDATA[>>URL is set to: https://api.ratesapi.io/api/latest?base=CZK&symbols=DKK]]>
+    </line>
+    <line>
+      <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/latest?base=CZK&symbols=DKK]]>
+    </line>
+    <line>
+      <![CDATA[>>Response status code is: 200]]>
+    </line>
+    <line>
+      <![CDATA[>>Base exchange currency is: CZK]]>
+    </line>
+    <line>
+      <![CDATA[>>Response: {"base":"CZK","rates":{"DKK":0.2846053789},"date":"2020-12-18"}]]>
+    </line>
+    <line>
+      <![CDATA[>>[Expected exchange currency: [DKK] | Actual exchange currency: [DKK]]]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="20177" started-at="2020-12-20T23:13:35 IST" finished-at="2020-12-20T23:13:55 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f943d71]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="20177" started-at="2020-12-20T23:13:35 IST" finished-at="2020-12-20T23:13:55 IST">
+      <class name="runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@2f943d71]" name="setUpClass" is-config="true" duration-ms="348" started-at="2020-12-20T23:13:35 IST" finished-at="2020-12-20T23:13:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:runner.TestRunner@2f943d71]" name="beforeTest" is-config="true" duration-ms="1" started-at="2020-12-20T23:13:35 IST" finished-at="2020-12-20T23:13:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f943d71]" name="runScenario" duration-ms="3656" started-at="2020-12-20T23:13:35 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-20T23:13:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get the specific date foreign exchange reference rates"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Historical Foreign Exchange rates]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[>>URL is set to: https://api.ratesapi.io/api/2010-01-15]]>
+            </line>
+            <line>
+              <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/2010-01-15]]>
+            </line>
+            <line>
+              <![CDATA[>>Response status code is: 200]]>
+            </line>
+            <line>
+              <![CDATA[>>Base exchange currency is: EUR]]>
+            </line>
+            <line>
+              <![CDATA[>>[Expected exchange rate date: 2010-01-15 | Actual exchange rate date: 2010-01-15]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f943d71]" name="runScenario" duration-ms="645" started-at="2020-12-20T23:13:39 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-20T23:13:40 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get the specific date foreign exchange reference rates with one symbol"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Historical Foreign Exchange rates]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[>>URL is set to: https://api.ratesapi.io/api/2018-01-31?symbols=RON]]>
+            </line>
+            <line>
+              <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/2018-01-31?symbols=RON]]>
+            </line>
+            <line>
+              <![CDATA[>>Response status code is: 200]]>
+            </line>
+            <line>
+              <![CDATA[>>Base exchange currency is: EUR]]>
+            </line>
+            <line>
+              <![CDATA[>>[Expected exchange rate date: 2018-01-31 | Actual exchange rate date: 2018-01-31]]]>
+            </line>
+            <line>
+              <![CDATA[>>Response: {"base":"EUR","rates":{"RON":4.6545},"date":"2018-01-31"}]]>
+            </line>
+            <line>
+              <![CDATA[>>[Expected exchange currency: [RON] | Actual exchange currency: [RON]]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f943d71]" name="runScenario" duration-ms="7662" started-at="2020-12-20T23:13:40 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-20T23:13:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get the specific date foreign exchange reference rates with multiple symbols"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Historical Foreign Exchange rates]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[>>URL is set to: https://api.ratesapi.io/api/2018-01-31?symbols=USD,GBP]]>
+            </line>
+            <line>
+              <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/2018-01-31?symbols=USD,GBP]]>
+            </line>
+            <line>
+              <![CDATA[>>Response status code is: 200]]>
+            </line>
+            <line>
+              <![CDATA[>>Base exchange currency is: EUR]]>
+            </line>
+            <line>
+              <![CDATA[>>[Expected exchange rate date: 2018-01-31 | Actual exchange rate date: 2018-01-31]]]>
+            </line>
+            <line>
+              <![CDATA[>>Response: {"base":"EUR","rates":{"USD":1.2457,"GBP":0.8791},"date":"2018-01-31"}]]>
+            </line>
+            <line>
+              <![CDATA[>>[Expected exchange currency: [USD, GBP] | Actual exchange currency: [GBP, USD]]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f943d71]" name="runScenario" duration-ms="612" started-at="2020-12-20T23:13:47 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-20T23:13:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get the specific date foreign exchange reference rates with base"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Historical Foreign Exchange rates]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[>>URL is set to: https://api.ratesapi.io/api/2013-10-10?base=CZK]]>
+            </line>
+            <line>
+              <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/2013-10-10?base=CZK]]>
+            </line>
+            <line>
+              <![CDATA[>>Response status code is: 200]]>
+            </line>
+            <line>
+              <![CDATA[>>Base exchange currency is: CZK]]>
+            </line>
+            <line>
+              <![CDATA[>>[Expected exchange rate date: 2013-10-10 | Actual exchange rate date: 2013-10-10]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f943d71]" name="runScenario" duration-ms="600" started-at="2020-12-20T23:13:48 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-20T23:13:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get the specific date foreign exchange reference rates with symbol and base"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Historical Foreign Exchange rates]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[>>URL is set to: https://api.ratesapi.io/api/2019-07-15?base=PLN&symbols=GBP]]>
+            </line>
+            <line>
+              <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/2019-07-15?base=PLN&symbols=GBP]]>
+            </line>
+            <line>
+              <![CDATA[>>Response status code is: 200]]>
+            </line>
+            <line>
+              <![CDATA[>>Base exchange currency is: PLN]]>
+            </line>
+            <line>
+              <![CDATA[>>[Expected exchange rate date: 2019-07-15 | Actual exchange rate date: 2019-07-15]]]>
+            </line>
+            <line>
+              <![CDATA[>>Response: {"base":"PLN","rates":{"GBP":0.2108605884},"date":"2019-07-15"}]]>
+            </line>
+            <line>
+              <![CDATA[>>[Expected exchange currency: [GBP] | Actual exchange currency: [GBP]]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f943d71]" name="runScenario" duration-ms="1506" started-at="2020-12-20T23:13:48 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-20T23:13:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get the future dated foreign exchange reference rates"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Historical Foreign Exchange rates]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[>>URL is set to: https://api.ratesapi.io/api/2020-12-25]]>
+            </line>
+            <line>
+              <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/2020-12-25]]>
+            </line>
+            <line>
+              <![CDATA[>>Response status code is: 200]]>
+            </line>
+            <line>
+              <![CDATA[>>Base exchange currency is: EUR]]>
+            </line>
+            <line>
+              <![CDATA[>>[Latest exchange rate date: 2020-12-18 | Exchange rate date for future dates: 2020-12-18]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f943d71]" name="runScenario" duration-ms="1572" started-at="2020-12-20T23:13:50 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-20T23:13:52 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get the latest foreign exchange reference rates"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Latest Foreign Exchange rates]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[>>URL is set to: https://api.ratesapi.io/api/latest]]>
+            </line>
+            <line>
+              <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/latest]]>
+            </line>
+            <line>
+              <![CDATA[>>Response status code is: 200]]>
+            </line>
+            <line>
+              <![CDATA[>>Base exchange currency is: EUR]]>
+            </line>
+            <line>
+              <![CDATA[>>Response: {"base":"EUR","rates":{"GBP":0.90828,"HKD":9.5039,"IDR":17337.6,"ILS":3.9676,"DKK":7.4393,"INR":90.117,"CHF":1.0845,"MXN":24.328,"CZK":26.139,"SGD":1.6282,"THB":36.556,"HRK":7.5328,"MYR":4.9532,"NOK":10.5163,"CNY":8.0146,"BGN":1.9558,"PHP":58.93,"SEK":10.1333,"PLN":4.4779,"ZAR":17.8699,"CAD":1.5638,"ISK":156.4,"BRL":6.2668,"RON":4.8688,"NZD":1.7201,"TRY":9.3988,"JPY":126.69,"RUB":90.2025,"KRW":1346.95,"USD":1.2259,"HUF":357.24,"AUD":1.6107},"date":"2020-12-18"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f943d71]" name="runScenario" duration-ms="1523" started-at="2020-12-20T23:13:52 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-20T23:13:53 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get the latest foreign exchange reference rates with one symbol"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Latest Foreign Exchange rates]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[>>URL is set to: https://api.ratesapi.io/api/latest?symbols=JPY]]>
+            </line>
+            <line>
+              <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/latest?symbols=JPY]]>
+            </line>
+            <line>
+              <![CDATA[>>Response status code is: 200]]>
+            </line>
+            <line>
+              <![CDATA[>>Base exchange currency is: EUR]]>
+            </line>
+            <line>
+              <![CDATA[>>Response: {"base":"EUR","rates":{"JPY":126.69},"date":"2020-12-18"}]]>
+            </line>
+            <line>
+              <![CDATA[>>[Expected exchange currency: [JPY] | Actual exchange currency: [JPY]]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f943d71]" name="runScenario" duration-ms="541" started-at="2020-12-20T23:13:53 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-20T23:13:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get the latest foreign exchange reference rates with more than one symbols"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Latest Foreign Exchange rates]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[>>URL is set to: https://api.ratesapi.io/api/latest?symbols=INR,AUD,GBP]]>
+            </line>
+            <line>
+              <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/latest?symbols=INR,AUD,GBP]]>
+            </line>
+            <line>
+              <![CDATA[>>Response status code is: 200]]>
+            </line>
+            <line>
+              <![CDATA[>>Base exchange currency is: EUR]]>
+            </line>
+            <line>
+              <![CDATA[>>Response: {"base":"EUR","rates":{"GBP":0.90828,"INR":90.117,"AUD":1.6107},"date":"2020-12-18"}]]>
+            </line>
+            <line>
+              <![CDATA[>>[Expected exchange currency: [INR, AUD, GBP] | Actual exchange currency: [AUD, GBP, INR]]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f943d71]" name="runScenario" duration-ms="604" started-at="2020-12-20T23:13:54 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-20T23:13:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get the latest foreign exchange reference rates with base"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Latest Foreign Exchange rates]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[>>URL is set to: https://api.ratesapi.io/api/latest?base=INR]]>
+            </line>
+            <line>
+              <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/latest?base=INR]]>
+            </line>
+            <line>
+              <![CDATA[>>Response status code is: 200]]>
+            </line>
+            <line>
+              <![CDATA[>>Base exchange currency is: INR]]>
+            </line>
+            <line>
+              <![CDATA[>>Response: {"base":"INR","rates":{"GBP":0.0100788974,"HKD":0.1054617886,"IDR":192.3898931389,"ILS":0.0440272091,"DKK":0.0825515718,"INR":1.0,"CHF":0.0120343553,"MXN":0.2699601629,"CZK":0.2900562602,"SGD":0.0180676232,"THB":0.4056504322,"HRK":0.0835891119,"EUR":0.0110966854,"MYR":0.0549641022,"NOK":0.1166960729,"CNY":0.088935495,"BGN":0.0217028973,"PHP":0.6539276718,"PLN":0.0496898476,"ZAR":0.1982966588,"CAD":0.0173529967,"ISK":1.7355215997,"BRL":0.0695407082,"RON":0.054027542,"NZD":0.0190874086,"TRY":0.1042955269,"JPY":1.4058390759,"RUB":1.0009487666,"KRW":14.9466804266,"USD":0.0136034267,"AUD":0.0178734312,"HUF":3.9641798995,"SEK":0.1124460424},"date":"2020-12-18"}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@2f943d71]" name="runScenario" duration-ms="802" started-at="2020-12-20T23:13:54 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-12-20T23:13:55 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Get the latest foreign exchange reference rates with symbols and base"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Latest Foreign Exchange rates]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[>>URL is set to: https://api.ratesapi.io/api/latest?base=CZK&symbols=DKK]]>
+            </line>
+            <line>
+              <![CDATA[>>GET call submitted to: https://api.ratesapi.io/api/latest?base=CZK&symbols=DKK]]>
+            </line>
+            <line>
+              <![CDATA[>>Response status code is: 200]]>
+            </line>
+            <line>
+              <![CDATA[>>Base exchange currency is: CZK]]>
+            </line>
+            <line>
+              <![CDATA[>>Response: {"base":"CZK","rates":{"DKK":0.2846053789},"date":"2020-12-18"}]]>
+            </line>
+            <line>
+              <![CDATA[>>[Expected exchange currency: [DKK] | Actual exchange currency: [DKK]]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:runner.TestRunner@2f943d71]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-12-20T23:13:55 IST" finished-at="2020-12-20T23:13:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@2f943d71]" name="tearDownClass" is-config="true" duration-ms="30" started-at="2020-12-20T23:13:55 IST" finished-at="2020-12-20T23:13:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

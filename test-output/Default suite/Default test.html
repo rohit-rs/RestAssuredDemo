@@ -1,0 +1,264 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Dec 20 23:13:35 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>20 seconds (20177 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get the specific date foreign exchange reference rates", "Optional[Historical Foreign Exchange rates]"<br/>
+<a href="#Output-974308356" onClick='toggleBox("Output-974308356", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-974308356" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-974308356">
+>>URL is set to: https://api.ratesapi.io/api/2010-01-15<br/>
+>>GET call submitted to: https://api.ratesapi.io/api/2010-01-15<br/>
+>>Response status code is: 200<br/>
+>>Base exchange currency is: EUR<br/>
+>>[Expected exchange rate date: 2010-01-15 | Actual exchange rate date: 2010-01-15]<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>runner.TestRunner@2f943d71</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get the specific date foreign exchange reference rates with one symbol", "Optional[Historical Foreign Exchange rates]"<br/>
+<a href="#Output-1356419559" onClick='toggleBox("Output-1356419559", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1356419559" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1356419559">
+>>URL is set to: https://api.ratesapi.io/api/2018-01-31?symbols=RON<br/>
+>>GET call submitted to: https://api.ratesapi.io/api/2018-01-31?symbols=RON<br/>
+>>Response status code is: 200<br/>
+>>Base exchange currency is: EUR<br/>
+>>[Expected exchange rate date: 2018-01-31 | Actual exchange rate date: 2018-01-31]<br/>
+>>Response: {"base":"EUR","rates":{"RON":4.6545},"date":"2018-01-31"}<br/>
+>>[Expected exchange currency: [RON] | Actual exchange currency: [RON]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2f943d71</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get the specific date foreign exchange reference rates with multiple symbols", "Optional[Historical Foreign Exchange rates]"<br/>
+<a href="#Output-2056277810" onClick='toggleBox("Output-2056277810", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2056277810" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2056277810">
+>>URL is set to: https://api.ratesapi.io/api/2018-01-31?symbols=USD,GBP<br/>
+>>GET call submitted to: https://api.ratesapi.io/api/2018-01-31?symbols=USD,GBP<br/>
+>>Response status code is: 200<br/>
+>>Base exchange currency is: EUR<br/>
+>>[Expected exchange rate date: 2018-01-31 | Actual exchange rate date: 2018-01-31]<br/>
+>>Response: {"base":"EUR","rates":{"USD":1.2457,"GBP":0.8791},"date":"2018-01-31"}<br/>
+>>[Expected exchange currency: [USD, GBP] | Actual exchange currency: [GBP, USD]]<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>runner.TestRunner@2f943d71</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get the specific date foreign exchange reference rates with base", "Optional[Historical Foreign Exchange rates]"<br/>
+<a href="#Output-1638864144" onClick='toggleBox("Output-1638864144", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1638864144" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1638864144">
+>>URL is set to: https://api.ratesapi.io/api/2013-10-10?base=CZK<br/>
+>>GET call submitted to: https://api.ratesapi.io/api/2013-10-10?base=CZK<br/>
+>>Response status code is: 200<br/>
+>>Base exchange currency is: CZK<br/>
+>>[Expected exchange rate date: 2013-10-10 | Actual exchange rate date: 2013-10-10]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2f943d71</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get the specific date foreign exchange reference rates with symbol and base", "Optional[Historical Foreign Exchange rates]"<br/>
+<a href="#Output-1151772302" onClick='toggleBox("Output-1151772302", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1151772302" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1151772302">
+>>URL is set to: https://api.ratesapi.io/api/2019-07-15?base=PLN&symbols=GBP<br/>
+>>GET call submitted to: https://api.ratesapi.io/api/2019-07-15?base=PLN&symbols=GBP<br/>
+>>Response status code is: 200<br/>
+>>Base exchange currency is: PLN<br/>
+>>[Expected exchange rate date: 2019-07-15 | Actual exchange rate date: 2019-07-15]<br/>
+>>Response: {"base":"PLN","rates":{"GBP":0.2108605884},"date":"2019-07-15"}<br/>
+>>[Expected exchange currency: [GBP] | Actual exchange currency: [GBP]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2f943d71</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get the future dated foreign exchange reference rates", "Optional[Historical Foreign Exchange rates]"<br/>
+<a href="#Output-1892470159" onClick='toggleBox("Output-1892470159", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1892470159" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1892470159">
+>>URL is set to: https://api.ratesapi.io/api/2020-12-25<br/>
+>>GET call submitted to: https://api.ratesapi.io/api/2020-12-25<br/>
+>>Response status code is: 200<br/>
+>>Base exchange currency is: EUR<br/>
+>>[Latest exchange rate date: 2020-12-18 | Exchange rate date for future dates: 2020-12-18<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@2f943d71</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get the latest foreign exchange reference rates", "Optional[Latest Foreign Exchange rates]"<br/>
+<a href="#Output-1842463725" onClick='toggleBox("Output-1842463725", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1842463725" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1842463725">
+>>URL is set to: https://api.ratesapi.io/api/latest<br/>
+>>GET call submitted to: https://api.ratesapi.io/api/latest<br/>
+>>Response status code is: 200<br/>
+>>Base exchange currency is: EUR<br/>
+>>Response: {"base":"EUR","rates":{"GBP":0.90828,"HKD":9.5039,"IDR":17337.6,"ILS":3.9676,"DKK":7.4393,"INR":90.117,"CHF":1.0845,"MXN":24.328,"CZK":26.139,"SGD":1.6282,"THB":36.556,"HRK":7.5328,"MYR":4.9532,"NOK":10.5163,"CNY":8.0146,"BGN":1.9558,"PHP":58.93,"SEK":10.1333,"PLN":4.4779,"ZAR":17.8699,"CAD":1.5638,"ISK":156.4,"BRL":6.2668,"RON":4.8688,"NZD":1.7201,"TRY":9.3988,"JPY":126.69,"RUB":90.2025,"KRW":1346.95,"USD":1.2259,"HUF":357.24,"AUD":1.6107},"date":"2020-12-18"}<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@2f943d71</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get the latest foreign exchange reference rates with one symbol", "Optional[Latest Foreign Exchange rates]"<br/>
+<a href="#Output-1020897892" onClick='toggleBox("Output-1020897892", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1020897892" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1020897892">
+>>URL is set to: https://api.ratesapi.io/api/latest?symbols=JPY<br/>
+>>GET call submitted to: https://api.ratesapi.io/api/latest?symbols=JPY<br/>
+>>Response status code is: 200<br/>
+>>Base exchange currency is: EUR<br/>
+>>Response: {"base":"EUR","rates":{"JPY":126.69},"date":"2020-12-18"}<br/>
+>>[Expected exchange currency: [JPY] | Actual exchange currency: [JPY]]<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>runner.TestRunner@2f943d71</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get the latest foreign exchange reference rates with more than one symbols", "Optional[Latest Foreign Exchange rates]"<br/>
+<a href="#Output-1976870927" onClick='toggleBox("Output-1976870927", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1976870927" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1976870927">
+>>URL is set to: https://api.ratesapi.io/api/latest?symbols=INR,AUD,GBP<br/>
+>>GET call submitted to: https://api.ratesapi.io/api/latest?symbols=INR,AUD,GBP<br/>
+>>Response status code is: 200<br/>
+>>Base exchange currency is: EUR<br/>
+>>Response: {"base":"EUR","rates":{"GBP":0.90828,"INR":90.117,"AUD":1.6107},"date":"2020-12-18"}<br/>
+>>[Expected exchange currency: [INR, AUD, GBP] | Actual exchange currency: [AUD, GBP, INR]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2f943d71</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get the latest foreign exchange reference rates with base", "Optional[Latest Foreign Exchange rates]"<br/>
+<a href="#Output-751259764" onClick='toggleBox("Output-751259764", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-751259764" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-751259764">
+>>URL is set to: https://api.ratesapi.io/api/latest?base=INR<br/>
+>>GET call submitted to: https://api.ratesapi.io/api/latest?base=INR<br/>
+>>Response status code is: 200<br/>
+>>Base exchange currency is: INR<br/>
+>>Response: {"base":"INR","rates":{"GBP":0.0100788974,"HKD":0.1054617886,"IDR":192.3898931389,"ILS":0.0440272091,"DKK":0.0825515718,"INR":1.0,"CHF":0.0120343553,"MXN":0.2699601629,"CZK":0.2900562602,"SGD":0.0180676232,"THB":0.4056504322,"HRK":0.0835891119,"EUR":0.0110966854,"MYR":0.0549641022,"NOK":0.1166960729,"CNY":0.088935495,"BGN":0.0217028973,"PHP":0.6539276718,"PLN":0.0496898476,"ZAR":0.1982966588,"CAD":0.0173529967,"ISK":1.7355215997,"BRL":0.0695407082,"RON":0.054027542,"NZD":0.0190874086,"TRY":0.1042955269,"JPY":1.4058390759,"RUB":1.0009487666,"KRW":14.9466804266,"USD":0.0136034267,"AUD":0.0178734312,"HUF":3.9641798995,"SEK":0.1124460424},"date":"2020-12-18"}<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2f943d71</td></tr>
+<tr>
+<td title='runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Get the latest foreign exchange reference rates with symbols and base", "Optional[Latest Foreign Exchange rates]"<br/>
+<a href="#Output-2140396878" onClick='toggleBox("Output-2140396878", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2140396878" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2140396878">
+>>URL is set to: https://api.ratesapi.io/api/latest?base=CZK&symbols=DKK<br/>
+>>GET call submitted to: https://api.ratesapi.io/api/latest?base=CZK&symbols=DKK<br/>
+>>Response status code is: 200<br/>
+>>Base exchange currency is: CZK<br/>
+>>Response: {"base":"CZK","rates":{"DKK":0.2846053789},"date":"2020-12-18"}<br/>
+>>[Expected exchange currency: [DKK] | Actual exchange currency: [DKK]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>runner.TestRunner@2f943d71</td></tr>
+</table><p>
+</body>
+</html>
