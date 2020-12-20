@@ -86,7 +86,6 @@ public class StepDefinitions {
 
 	@Given("^I want to execute historical foreign exchange rates endpoint with future date$")
 	public void i_want_to_execute_specific_date_exchange_rates_with_future_date() {
-
 		// Get a future date
 		SimpleDateFormat formattter = new SimpleDateFormat("yyyy-MM-dd");
 		Calendar date = Calendar.getInstance();
@@ -100,8 +99,7 @@ public class StepDefinitions {
 
 	@When("^I submit the get call$")
 	public void i_submit_the_get_call() {
-		RequestSpecification request = RestAssured.given();
-		response = request.get(URL);
+		response = RestAssured.given().get(URL);
 		Reporter.log(">>GET call submitted to: " + URL, true);
 	}
 
