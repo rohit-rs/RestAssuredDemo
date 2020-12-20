@@ -8,6 +8,6 @@ Framework implementation details:
 
 -> Specifications/Features files are written in Gherkin language.
 
--> TestNG reporter class has been used for loggin.
+-> TestNG reporter class has been used for logging.
 
 -> Standard TestNG reporting has been used for detailed status reporting.
