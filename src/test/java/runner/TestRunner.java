@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeClass;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
+import io.restassured.response.Response;
 
 
 @CucumberOptions(
@@ -16,6 +17,11 @@ import io.cucumber.testng.CucumberOptions;
 		)
 
 public class TestRunner extends AbstractTestNGCucumberTests {
+	
+	protected static final String BASE_URL = "https://api.ratesapi.io/api/";
+	protected static Response response;
+	protected static String url;
+	
 	
 	@BeforeClass
 	public void beforeTest() {
