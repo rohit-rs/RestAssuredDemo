@@ -1,6 +1,6 @@
 Feature: Historical Foreign Exchange rates
 	
-		 @RegressionTest @GetHistorialRates
+	@RegressionTest @GetHistorialRates
   Scenario: Get the specific date foreign exchange reference rates
     Given I want to execute historical foreign exchange rates endpoint for date "2010-01-15"
     When I submit the get call

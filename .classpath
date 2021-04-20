@@ -23,5 +23,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Rohit Srivastav/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rohit Srivastav/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3-sources.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

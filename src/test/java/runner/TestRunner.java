@@ -1,6 +1,7 @@
 package runner;
 
-import org.junit.AfterClass;
+
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
